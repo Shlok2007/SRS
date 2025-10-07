@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Network | Shriniwasa Roadways Pvt. Ltd.</title>
+  <meta name="description" content="Explore Shriniwasa Roadways’ pan‑India service network. View our key branch locations on an interactive map and find contact details for our major offices." />
+  <!-- Fonts and icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-xh6kXgMwWc4vjXjJpN96CB2A+qsSVqS+8CA0nVddOZXS6jttuPAoBs+K6TfGsZpbbHKzmwSzh6NsP9lm3RfsKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-pDuo9HBJyXRl7kRJTJ63eVUsVTNff7kwh28ykVfoCEN0z7LxyzKDn5XxhxL7sRKqzZo4PM5XsfS35GZHYsG1bw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha512-sA+z0p5WbF4N+KOdXG4eF2+UGjByUSzV+llHyBs+K6TfGsZpbbHKzmwSzh6NsP9lm3RfsKg==" crossorigin="" />
+  <!-- Site Styles -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container flex" style="display:flex; align-items:center; justify-content:space-between;">
+      <a href="index.html" class="branding">Shriniwasa</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="innovation.html">Innovation</a></li>
+          <li><a href="accreditations.html">Accreditations</a></li>
+          <li><a href="awards.html">Awards</a></li>
+          <li><a href="network.html" class="active">Network</a></li>
+          <li><a href="enquiry.html">Enquiry</a></li>
+          <li><a href="career.html">Careers</a></li>
+          <li><a href="group.html">Group</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button id="theme-toggle" aria-label="Toggle dark mode"><i class="fa-solid fa-moon"></i></button>
+      <button class="menu-toggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
+    </div>
+  </header>
+
+  <!-- Breadcrumbs -->
+  <div class="breadcrumbs">
+    <div class="container">
+      <a href="index.html">Home</a> <span>/</span> <span>Network</span>
+    </div>
+  </div>
+
+  <!-- Network Content -->
+  <main>
+    <section>
+      <h2 data-aos="fade-up">Pan‑India Service Network</h2>
+      <p class="section-intro" data-aos="fade-up" data-aos-delay="100">
+        Our extensive network covers a large part of India, enabling us to move goods seamlessly between factories, ports and distribution centres. Explore our major branch locations on the interactive map below and refer to the list for contact details.
+      </p>
+    </section>
+    <section>
+      <div id="map" data-aos="fade-up" data-aos-delay="200"></div>
+    </section>
+    <section>
+      <h2 data-aos="fade-up">Major Offices</h2>
+      <div class="cards" data-aos="fade-up" data-aos-delay="200">
+        <div class="card" style="text-align:left;">
+          <h3>Corporate Office – Chennai</h3>
+          <p>33/38 Dewan Rama Road, Purasaiwakkam, Chennai, Tamil Nadu – 600084</p>
+          <p>Phone: +91 98402 37079 / +91 98402 37078</p>
+          <p>Email: info@shriniwasa.com</p>
+        </div>
+        <div class="card" style="text-align:left;">
+          <h3>Mumbai</h3>
+          <p>Address: 118, 1st Floor, Sector 19C, Vashi, Navi Mumbai, Maharashtra – 400705</p>
+          <p>Phone: +91 xxxxxxxxxx</p>
+          <p>Email: mumbai@shriniwasa.com</p>
+        </div>
+        <div class="card" style="text-align:left;">
+          <h3>Delhi</h3>
+          <p>Address: Plot No. 3, Behind Pragati Maidan, New Delhi – 110001</p>
+          <p>Phone: +91 xxxxxxxxxx</p>
+          <p>Email: delhi@shriniwasa.com</p>
+        </div>
+        <div class="card" style="text-align:left;">
+          <h3>Kolkata</h3>
+          <p>Address: 22/3 Kasba Industrial Estate, Phase‑1, Kolkata, West Bengal – 700107</p>
+          <p>Phone: +91 xxxxxxxxxx</p>
+          <p>Email: kolkata@shriniwasa.com</p>
+        </div>
+        <div class="card" style="text-align:left;">
+          <h3>Hyderabad</h3>
+          <p>Address: 8‑2‑120/76, Road No. 3, Banjara Hills, Hyderabad, Telangana – 500034</p>
+          <p>Phone: +91 xxxxxxxxxx</p>
+          <p>Email: hyderabad@shriniwasa.com</p>
+        </div>
+        <div class="card" style="text-align:left;">
+          <h3>Bangalore</h3>
+          <p>Address: No. 12, 3rd Floor, Victoria Road, Bangalore, Karnataka – 560047</p>
+          <p>Phone: +91 xxxxxxxxxx</p>
+          <p>Email: bangalore@shriniwasa.com</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Floating action buttons -->
+  <div class="floating-buttons">
+    <a href="https://wa.me/919840237079" title="Chat on WhatsApp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i></a>
+    <a href="#" title="Track Shipment" data-track-trigger><i class="fa-solid fa-box"></i></a>
+  </div>
+
+  <!-- Track Shipment Modal -->
+  <div id="track-modal" class="modal">
+    <div class="modal-content" style="background-color: var(--color-white); padding:2rem; border-radius:8px; max-width:500px; width:90%; position:relative;">
+      <button class="modal-close" style="position:absolute; top:10px; right:10px; background:none; border:none; font-size:1.5rem; cursor:pointer; color: var(--color-secondary);"><i class="fa-solid fa-xmark"></i></button>
+      <h3 style="margin-bottom:1rem;">Track Your Shipment</h3>
+      <p style="margin-bottom:1rem;">Enter your tracking number below. This is a placeholder – integration with our tracking API is coming soon.</p>
+      <input type="text" placeholder="Tracking Number" style="width:100%; padding:0.75rem; border:1px solid var(--color-accent); border-radius:4px;" />
+      <button class="btn btn-primary" style="margin-top:1rem;">Track</button>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-content">
+      <div>
+        <h4>About Shriniwasa</h4>
+        <p>Shriniwasa Roadways Pvt. Ltd. is India’s trusted partner for end‑to‑end logistics. We move goods across the country using a state‑of‑the‑art fleet, expansive warehousing and cutting‑edge technology.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="network.html">Network</a>
+        <a href="career.html">Careers</a>
+        <a href="enquiry.html">Enquiry</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>33/38 Dewan Rama Road,<br />Purasaiwakkam, Chennai, Tamil Nadu – 600084</p>
+        <p>Phone: <a href="tel:+919840237079">+91 98402 37079</a> / <a href="tel:+919840237078">+91 98402 37078</a></p>
+        <p>Email: <a href="mailto:info@shriniwasa.com">info@shriniwasa.com</a></p>
+      </div>
+      <div>
+        <h4>Follow Us</h4>
+        <div class="social">
+          <a href="https://www.linkedin.com" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://twitter.com" target="_blank" rel="noopener"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="credits">&copy; 2025 Shriniwasa Roadways Pvt. Ltd. All rights reserved.</div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-pBA/H6vKrrfE0Yv7FpC18JNpDutLCRa14Q6gttxyPjdvVSxGInxjeRGna43EIBgzHuLlHotE5Z6T2z7r8zX7dw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha512-vRZnQ+zXCk9VfVCK/JP94YqT3Y0P44Xf71+ZVJ2EEMXYj92apdcgP6fINVi6zkRgZNpmj12E7YQDdyCjTiMQuQ==" crossorigin=""></script>
+  <script src="assets/js/script.js"></script>
+  <script>
+    // initialise map for network page
+    document.addEventListener('DOMContentLoaded', function () {
+      const map = L.map('map').setView([20.5937, 78.9629], 5);
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="https://www.openstreetmap.org">OpenStreetMap</a> contributors'
+      }).addTo(map);
+      const offices = [
+        { name: 'Chennai HQ', coords: [13.0836, 80.2707] },
+        { name: 'Mumbai', coords: [19.0760, 72.8777] },
+        { name: 'Delhi', coords: [28.7041, 77.1025] },
+        { name: 'Kolkata', coords: [22.5726, 88.3639] },
+        { name: 'Hyderabad', coords: [17.3850, 78.4867] },
+        { name: 'Bangalore', coords: [12.9716, 77.5946] }
+      ];
+      offices.forEach(office => {
+        L.marker(office.coords).addTo(map).bindPopup(office.name);
+      });
+    });
+  </script>
+</body>
+</html>
