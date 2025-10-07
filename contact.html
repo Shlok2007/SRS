@@ -3,19 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <base href="/SRS/">
   <title>Contact Us | Shriniwasa Roadways Pvt. Ltd.</title>
   <meta name="description" content="Get in touch with Shriniwasa Roadways. Find our office address, phone numbers, email and send us a message through the contact form." />
   <!-- Fonts and icons -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-xh6kXgMwWc4vjXjJpN96CB2A+qsSVqS+8CA0nVddOZXS6jttuPAoBs+K6TfGsZpbbHKzmwSzh6NsP9lm3RfsKg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- AOS CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-pDuo9HBJyXRl7kRJTJ63eVUsVTNff7kwh28ykVfoCEN0z7LxyzKDn5XxhxL7sRKqzZo4PM5XsfS35GZHYsG1bw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Leaflet CSS for maps -->
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha512-sA+z0p5WbF4N+KOdXG4eF2+UGjByUSzV+llHyBs+K6TfGsZpbbHKzmwSzh6NsP9lm3RfsKg==" crossorigin="" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
   <!-- Site Styles -->
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="style.css?v=3">
+  <style>
+    header nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 1.25rem; }
+    header nav a { text-decoration: none; }
+    #map { min-height: 320px; }
+  </style>
 </head>
 <body>
   <!-- Header -->
@@ -154,10 +160,10 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-pBA/H6vKrrfE0Yv7FpC18JNpDutLCRa14Q6gttxyPjdvVSxGInxjeRGna43EIBgzHuLlHotE5Z6T2z7r8zX7dw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <!-- Leaflet JS for maps -->
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha512-vRZnQ+zXCk9VfVCK/JP94YqT3Y0P44Xf71+ZVJ2EEMXYj92apdcgP6fINVi6zkRgZNpmj12E7YQDdyCjTiMQuQ==" crossorigin=""></script>
-  <script src="assets/js/script.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script defer src="script.js?v=3"></script>
   <script>
     // Initialise map after the page loads
     document.addEventListener('DOMContentLoaded', function () {
